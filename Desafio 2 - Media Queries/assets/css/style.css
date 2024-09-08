@@ -13,6 +13,7 @@ body {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,6 +51,7 @@ nav li {
 header {
     grid-area: header;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
@@ -95,6 +97,11 @@ main {
 
 .card {
     margin: 2rem;
+    width:fit-content;
+}
+
+.card img{
+    width: 100%;
 }
 
 .card p {
@@ -115,7 +122,7 @@ main {
 
 .navegacion {
     grid-area: navegacion;
-    padding: 5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
