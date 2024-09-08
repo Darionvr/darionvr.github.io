@@ -1,0 +1,273 @@
+body {
+    font-family: SYNE;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "navegacion"
+        "footer";
+}
+
+/********** ENLACES ***********/
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/********** NAVBAR **********/
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+nav img {
+    width: auto;
+    height: 40px;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+.movil{
+    display: none;
+}
+
+/******** HEADER *********/
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+header li {
+    padding: 5px;
+    margin: 3px;
+    border: solid 1px black;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.ordenar {
+
+    display: flex;
+    align-items: center;
+
+}
+
+select {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: syne;
+    appearance: none;
+
+}
+
+
+
+/********** MAIN **********/
+
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    margin: 2rem;
+}
+
+.card p {
+    margin: 0;
+}
+.like{
+    position: absolute;
+    margin: 10px -30px;
+    
+}
+
+.like:hover{
+    color: red;
+}
+
+
+/********** NAVEGACIÓN **********/
+
+.navegacion {
+    grid-area: navegacion;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navegacion li {
+    margin: 1rem;
+
+}
+
+.navegacion a {
+    color: gray;
+    font-size: 1.2em;
+}
+
+.seleccionada a {
+    color: black;
+}
+
+button {
+    font-family: syne;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    width: 250px;
+    border: none;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.navegacion a:hover {
+    color: black;
+}
+
+/**********footer **********/
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+footer img {
+    width: 100px;
+
+}
+
+footer li {
+    margin: 1rem;
+}
+
+/******************** VERSION 576PX ********************/
+
+
+@media(min-width:576px) {
+    body {
+        grid-template-areas:
+            "nav header"
+            "nav main"
+            "nav main"
+            "footer main"
+            "footer navegacion";
+        grid-template-columns: 1fr 6fr;
+
+
+    }
+
+    /**********NAVBAR**********/
+    nav {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: auto;
+
+    }
+
+    nav img {
+        width: min-content;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 3rem 1rem;
+    }
+
+    nav li {
+        margin: 1rem;
+    }
+    .hamburguesa{
+        display: none;
+    }
+    .movil{
+        display:flex;
+    }
+
+    /********** main **********/
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-start;
+    }
+
+
+    header h1 {
+        margin: 0 0 1rem;
+    }
+
+    .card {
+        margin: 2rem 0;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    /********** Navegación **********/
+    .navegacion {
+        padding: 1rem;
+    }
+
+    /********** Footer **********/
+    footer {
+        justify-content: flex-end;
+
+    }
+
+    footer img {
+        display: none;
+
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+}
+
+/******************** VERSION 576PX ********************/
