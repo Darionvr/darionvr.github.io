@@ -7,6 +7,7 @@ body {
         "main"
         "navegacion"
         "footer";
+        
 }
 
 /********** ENLACES ***********/
@@ -106,6 +107,7 @@ main {
 
 .card p {
     margin: 0;
+    font-size: 1rem;
 }
 .like{
     position: absolute;
@@ -148,7 +150,7 @@ button {
     padding: 1rem;
     background-color: black;
     color: white;
-    width: 250px;
+    width: 200px;
     border: none;
 }
 
