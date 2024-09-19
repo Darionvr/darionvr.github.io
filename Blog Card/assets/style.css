@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'figtree';
+    src: url(./fonts/Figtree-VariableFont_wght.ttf) format('truetype'); 
+
+}
+
+body{
+    font-family: figtree;
+    background-color: #F4D04E;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    color: #111111;
+    
+}
+
+main{
+    background-color: #FFFFFF;
+    min-width: 20.4rem;
+    max-width: 24rem;
+    margin: 1.5rem;
+    border: 1px solid #111111;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 0px;
+    line-height: 150%;
+   
+
+    
+}
+
+article{
+   padding: 1.5rem 0 1.5rem 0;
+   margin: 0;
+}
+
+main img{
+    max-width: 100%;
+    border-radius: 20px;
+    
+}
+
+.category{
+    background-color: #F4D04E;
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+.date{
+    font-size: 0.75rem;
+    font-weight: 500;
+    
+}
+
+.title{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+
+.description{
+    color: #6B6B6B;
+    margin: 0;
+}
+
+
+.author{
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 800;
+    align-items: center;    
+        
+}
+
+.author img{
+    margin-right: 0.75rem;
+    height: 2rem;
+}
+
+
