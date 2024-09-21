@@ -25,7 +25,7 @@ Users should be able to:
 
 ## My process
 
-For this challenge I didn't use the Json file that was provided and use a full css table instead. I found this challenge very tricky because of some details like de rounded corners on the blue card and the shadow on the whole summary making that layers effect. 
+For this challenge, I didn’t use the JSON file that was provided and instead used a full CSS table. I found this challenge very tricky due to details like the rounded corners on the blue card and the shadow on the entire summary, creating that layered effect
 
 ### Built with
 
@@ -38,13 +38,13 @@ For this challenge I didn't use the Json file that was provided and use a full c
 
 ### What I learned
 
-I learned how to make a circle div with some text inside of it and it was the first time styling a table, it was a little difficult to put everything in order on my css file trying no to make an inifinite code. 
+I learned how to make a circle div with some text inside of it, and it was the first time styling a table.It was a little difficult to put everything in order in my css file trying not to create an inifinite amount of code. 
 
 
 
 ### Continued development
 
-I need to keep learning how to styling tables, I wasn't able to put the gap between each row and the round corners. I tried putting round-border and gap but these make no effect on a table. 
+I need to keep learning how to styling tables, I wasn't able to put a gap between each row and create the round corners. I tried using border-radius and gap but they had no effect on the table. 
 
 
 ## Author
