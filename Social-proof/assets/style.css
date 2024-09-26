@@ -28,7 +28,7 @@ body {
 
 }
 
-.rated {
+section {
     grid-area: rated;
 }
 
@@ -47,7 +47,7 @@ body {
     margin: .5rem 0 0 0;
 }
 
-.reviews {
+aside {
     grid-area: reviews;
 }
 
@@ -134,7 +134,7 @@ body {
     }
 
 
-    .rated {
+    section {
         display: flex;
         flex-direction: column;
       
@@ -173,7 +173,7 @@ body {
         align-self: flex-end;
     }
 
-    .reviews {
+    aside {
         display: flex;
         justify-content: space-around;
         height: max-content;
