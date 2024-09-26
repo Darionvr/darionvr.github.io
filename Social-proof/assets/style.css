@@ -13,22 +13,20 @@ body {
     text-align: center;
 }
 
-.title {
+header {
     grid-area: title;
     color: var(--DarkGrayishMagenta);
     padding: 1rem;
 
 
 }
-
-.title h1 {
+header h1 {
     font-size: 2rem;
     padding: 0 2rem 0 2rem;
     color: var(--VeryDarkMagenta);
 
 }
-
-section {
+main {
     grid-area: rated;
 }
 
@@ -120,13 +118,13 @@ aside {
     }
 
 
-    .title {
+    header {
         text-align: left;
         margin-right: 10em;
         padding: 0;
     }
 
-    .title h1 {
+    header h1 {
         
         font-size: 3.5rem;
         padding: 0;
@@ -134,7 +132,7 @@ aside {
     }
 
 
-    section {
+    main {
         display: flex;
         flex-direction: column;
       
