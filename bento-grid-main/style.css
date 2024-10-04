@@ -1,0 +1,401 @@
+@font-face {
+    font-family: DM Sans;
+    src: url(./fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+
+    --Purple100: hsl(254, 88%, 90%);
+    --Purple500: hsl(256, 67%, 59%);
+    --Yellow100: hsl(31, 66%, 93%);
+    --Yellow500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+
+    font-family: DM Sans;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+    padding: .5;
+
+}
+
+main {
+    margin: 0;
+    grid-area: main;
+}
+
+
+aside {
+    margin: 0;
+
+
+}
+
+div {
+
+    border-radius: .5rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    letter-spacing: -1px;
+    overflow: hidden;
+
+}
+
+
+
+/******************* Main block ********************/
+
+h1 {
+
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: 0;
+}
+
+
+main div {
+    color: var(--White);
+    background-color: var(--Purple500);
+    padding: 1rem 2rem;
+    text-align: center;
+
+
+    img {
+        width: 10em;
+    }
+
+    span:first-of-type {
+        color: var(--Yellow500);
+    }
+
+    span:last-of-type {
+        font-style: italic;
+    }
+
+    p {
+
+        margin-top: 0;
+        color: var(--Yellow100);
+    }
+}
+
+/******************* first block aside ********************/
+
+
+.first {
+    grid-area: first;
+}
+
+.first div:nth-child(1) {
+    background-color: var(--White);
+    padding: 1rem;
+
+    p {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 90%;
+    }
+
+    img {
+        width: 15rem;
+    }
+
+}
+
+.first div:nth-child(2) {
+    background-color: var(--Yellow500);
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 90%;
+    position: relative;
+    height: 11.2rem;
+
+    p {
+        margin-top: 0;
+    }
+
+    img {
+        width: 10.5rem;
+        position: absolute;
+    }
+}
+
+
+/******************* second block aside ********************/
+
+.second {
+
+    grid-area: second;
+
+    div {
+
+        background-color: var(--Purple100);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    img {
+        width: 15rem;
+    }
+
+}
+
+/******************* third block aside ********************/
+
+.third {
+    grid-area: third;
+}
+
+.third div:nth-child(1) {
+
+    background-color: var(--Purple500);
+    color: var(--White);
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+
+    img {
+        width: 11rem
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 90%;
+        margin-bottom: 0;
+
+    }
+}
+
+.third div:nth-child(2) {
+    background-color: var(--White);
+    padding: 1rem;
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    img {
+        
+        max-width: 8.5rem;
+    }
+
+}
+
+
+
+/******************* fourth block aside ********************/
+
+.fourth {
+    grid-area: fourth;
+}
+
+.fourth div:nth-child(1) {
+    background-color: var(--Yellow100);
+    padding: 1rem;
+
+    h2 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    span {
+        color: var(--Purple500);
+        font-style: italic;
+    }
+
+    img {
+        width: 9.5rem;
+        margin-top: .8rem;
+    }
+}
+
+
+.fourth div:nth-child(2) {
+
+    background-color: var(--Yellow500);
+    padding: 1rem;
+    
+    h2 {
+        margin-top: 0;
+        font-weight: 500;
+        line-height: 90%;
+    }
+
+    img {
+        width: 10.5em;
+    }
+
+}
+
+
+/******************* Desktop ********************/
+
+
+
+
+@media (min-width: 768px) {
+
+    body {
+
+        display: grid;
+        grid-template-areas:
+            "fourth main main second"
+            "fourth first first second"
+            "fourth third third third";
+
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+
+    }
+
+
+    main{
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+.first{
+    display: flex;
+    
+}
+
+    .first div:nth-child(1) {
+        overflow: hidden;
+        
+        p{
+            font-size: 1.5rem;
+           
+        }
+       
+    
+    }
+
+    .first div:nth-child(2) {
+
+        p{
+            font-size: 1.5rem;
+            line-height: 80%;
+            
+        }
+    }
+
+    .second {
+               
+        overflow: hidden;
+        display: flex;
+        align-self: stretch;
+        
+       
+        h2{
+            font-size: 1.5rem;
+            letter-spacing: -1.5px;
+            text-align: left;
+            line-height: 80%;
+        }
+        p{
+            text-align: left;
+            line-height: 100%;
+        }
+  
+    }
+
+    .third {
+
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: -4 / -1;
+        
+
+    }
+
+    .third div:nth-child(1) {
+        display: flex;
+        grid-column: -3 / -1;
+        grid-row: 3 / 4;
+        padding: 1rem;
+
+        p{
+            font-size: 2rem;
+            text-align: left;
+            padding: .5rem;
+        }   
+
+        img{
+            height: fit-content;
+        }
+        
+    }
+
+    .third div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        grid-column: -4 / -3;
+        grid-row: 3 / 4;
+       
+         
+        
+        h2{
+            font-size: 3rem;
+        }
+
+    }
+
+
+    .fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+      
+
+    }
+
+    .fourth div:nth-child(1) {
+        height: 100%;
+
+        h2{
+            font-size: 2rem;
+            letter-spacing: -2px;
+            line-height: 80%;
+        }
+        img{
+            margin-top: 1.5rem;
+        }
+        }
+
+    .fourth div:nth-child(2) {
+        height: 100%;
+
+        h2{
+            font-size: 2rem;
+            letter-spacing: -2px;
+            line-height: 80%;
+        }
+    }
+
+
+
+}
+
