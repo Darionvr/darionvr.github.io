@@ -1,0 +1,272 @@
+:root{
+
+    --Mostaza: #ffcd17;
+}
+
+body {
+    margin: 0;
+    background-image: url(../imgs/backg.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    font-family: noto sans;
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "menu "
+        "header"
+        "main"
+        "footer";
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover{
+    color: var(--Mostaza);
+}
+
+/********* MENÚ ********/
+
+
+menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: solid 0.1px grey;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.500);
+
+}
+
+menu img {
+    width: 50px;
+    filter: invert(100%);
+
+}
+
+menu li {
+    margin-left: 1rem;
+}
+
+menu ul{
+    display: flex;
+
+}
+
+
+/********* HEADER ********/
+
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+    
+
+}
+
+header img{
+max-width: 100%;   
+
+}
+.consolas{
+    width: 60%;
+}
+
+header p {
+    max-width: 55ch;
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header span {
+    font-size: 1.5em;
+}
+
+
+/***************MAIN **************/
+
+main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0;
+}
+
+main p{
+    font-size: 2em;
+    font-weight:bold;
+    
+}
+
+.persona{
+border: 1px solid var(--Mostaza);
+color:white;
+padding: 1rem;
+
+}
+.personajes {
+    grid-area: main;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    gap: 10px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: solid 1px grey;
+    transition: border 0.5s;
+
+}
+
+.box img {
+    width: 100%;
+    transition: transform 0.5s;
+
+}
+
+.nombre p {
+    font-size: 1.1em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.nombre {
+    background: linear-gradient(transparent, #1c1c1c 80%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.box:hover {
+    border: solid 1px var(--Mostaza);
+}
+
+.box:hover img {
+    transform: scale(1.2);
+
+}
+
+.box:hover .nombre {
+    height: 70%;
+
+}
+
+
+/***************FOOTER **************/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+
+
+}
+
+.iconos a{
+    margin: .5rem;
+   
+}
+
+/*************** 992 **************/
+
+@media (min-width: 992px){
+
+body{
+
+    grid-template-columns: 20% auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "menu header"
+    "footer main"
+    "footer main"
+    ;
+
+
+    
+}
+
+menu{
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: none;
+    border-right: solid 0.1px grey;
+    
+    
+        
+}
+menu li{
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+menu ul{
+    flex-direction: column;
+    
+}
+
+menu img{
+    margin-bottom: 1rem;
+}
+
+
+.personajes{
+    grid-template-columns: repeat(8, 1fr);
+
+
+}
+footer{
+    
+    border-right: solid 0.1px grey;
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 1rem;
+    justify-content: flex-end;
+    
+    
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.iconos a{
+    margin: 1rem;
+}
+
+}
