@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    width: 100vw;
     background-image: url(../imgs/backg.jpg);
     background-position: top;
     background-attachment: fixed;
