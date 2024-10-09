@@ -2,7 +2,6 @@
 
     --StrongCyan: hsl(171, 66%, 44%);
     --LightBlue: hsl(233, 100%, 69%);
-
     --DarkGrayishBlue: hsl(210, 10%, 33%);
     --GrayishBlue: hsl(201, 11%, 66%);
 }
@@ -18,7 +17,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 
@@ -31,40 +29,50 @@ h3 {
     font-weight: 600;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 
 p {
     color: var(--GrayishBlue);
-    font-size: .9rem;
+    font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: .7px;
     line-height: 160%;
 
 }
 
-img {
-    width: 100%;
+.title {
+    width: 70ch;
+    margin-bottom: 3rem;
+
 }
+
+/************** HEADER **************/
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     margin-top: 5rem;
     margin-bottom: 5rem;
-    padding: 1rem;
-
-    h1 {
-        font-size: 1.7rem;
-        margin: 0;
-    }
-
-    img {
-        width: 6rem;
-        margin-bottom: 3rem;
-    }
-
+    padding: 2rem;
 }
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p{
+    width: 60ch;
+}
+
+header img {
+    width: 6rem;
+    margin-bottom: 3rem;
+}
+
+
 
 button {
     font-family: Bai Jamjuree;
@@ -101,132 +109,130 @@ button {
     cursor: pointer;
 }
 
+
+/************** SECTIONS **************/
+
 main {
-    width: 100%;
+
     box-sizing: border-box;
     padding: 2rem;
 
 }
 
+/************** SNIPPETS **************/
+
 main section:nth-child(1) {
-
-    display: flex;
-    flex-direction: column;
     margin-bottom: 8rem;
+}
+
+.computer img {
+    width: 100%;
+    margin: 3rem 0 3rem;
+}
+
+.snippets {
+    margin-bottom: 1rem;
+}
 
 
-    img {
-        margin: 3rem 0 3rem;
-    }
+/************** CLIPBOARD **************/
 
-    div {
-        margin-bottom: 1rem;
+main section:nth-child(2) img {
+    width: 100%;
+    margin: 2rem 0 2rem;
+}
 
 
-    }
+/************** WORKFLOW **************/
 
+
+
+.workflow {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
 }
 
-main section:nth-child(2) {
+.workflow img {
 
-    img {
-        margin: 2rem 0 2rem;
-    }
-
+    width: fit-content;
+    margin: 1rem;
 
 }
 
-main section:nth-child(3) {
+/************** BRANDS **************/
 
-    p {
-        margin-bottom: 5rem;
-    }
-
-    img {
-        width: fit-content;
-        margin: 1rem;
-
-    }
-
-    div {
-        margin-top: 3rem;
-
-    }
-
-}
 
 .brands {
 
+    margin-bottom: 5rem;
+}
+
+.logos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
-
-    img {
-        width: fit-content;
-        margin: 2rem;
-    }
+    width: 80%;
+    margin: auto;
+    gap: 5rem;
 
 }
+
+
+/************** DOWNLOAD **************/
 
 .download-section {
     box-sizing: border-box;
     padding: 2rem;
 }
 
+/************** FOOTER **************/
+
 footer {
+
     width: 100%;
     background-color: rgb(238, 238, 238);
     margin-top: 5rem;
     box-sizing: border-box;
     padding: 2rem;
+}
 
-    img {
-        width: 3rem;
-        margin: 1rem;
-
-    }
-
-    a {
-        text-decoration: none;
-        color: var(--DarkGrayishBlue);
-
-    }
-
-    a:hover {
-        color: var(--StrongCyan);
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-
-        font-size: .9rem;
-        font-weight: 400;
-        line-height: 160%;
-
-    }
-
-    li {
-        margin: 1rem;
-    }
-
+footer img {
+    width: 3rem;
+    margin: 1rem;
 
 }
 
-.rrss {
-
-    img {
-        width: fit-content;
-        margin: 1rem;
-    }
-
-    a:hover {}
-
+footer a {
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
 
 }
+
+a:hover {
+    color: var(--StrongCyan);
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+footer li {
+    margin: 1rem;
+}
+
+.rrss img {
+
+
+    width: fit-content;
+    margin: 1rem;
+}
+
 
 
 /***************** DESKTOP ******************/
@@ -238,158 +244,139 @@ footer {
         background-image: url(./images/bg-header-desktop.png);
     }
 
+    /***************** DESKTOP HEADER ******************/
+
+
+    header {
+
+        margin-bottom: 3rem;
+    }
+
     button {
         width: 13rem;
     }
 
-    header {
-        display: block;
-        margin-bottom: 3rem;
+    .title {
+        grid-area: title;
 
-        p {
-            width: 60ch;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
+        margin: auto;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
+    /***************** DESKTOP SNIPPETS ******************/
 
     section:nth-child(1) {
 
-        position: relative;
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "image snippets";
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        width: fit-content;
 
 
-        .subtitle {
-            margin-bottom: 5rem;
-            width: 65ch;
-        }
-
-
-        div {
-            text-align: left;
-            margin-left: 80%;
-            margin-top: 1rem;
-
-            h3{
-                margin: 0;
-            }
-
-            p {
-                width: 36ch;
-                
-            }
-        }
-
-        img {
-            position: absolute;
-            width: 120%;
-            left: -80%;
-            top: 25%;
-
-        }
 
     }
+
+    .computer {
+        grid-area: image;
+        position: relative;
+
+    }
+
+    .computer img {
+        width: 100%;
+        position: absolute;
+        bottom: -20rem;
+        right: 5rem;
+
+    }
+
+    .snippets {
+        text-align: left;
+        margin-top: 5rem;
+        width: 36ch;
+    }
+
+    /***************** DESKTOP CLIPBOARD ******************/
 
     section:nth-child(2) {
 
-        
+
         margin-top: 15rem;
         align-items: center;
 
-        p {
-            width: 70ch;
-            margin: auto auto 4rem;
-        }
-
-        img {
-            width: 70%;
-        }
     }
 
-    section:nth-child(3) {
+    section:nth-child(2), img {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 80%;
+        margin: auto;
 
-        h2 {
-            font-size: 2em;
-            margin: 0;
-        }
-
-        .subtitle {
-            margin-bottom: 0;
-        }
-
-
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
-            margin-top: 0;
-            box-sizing: border-box;
-            padding: 0 5rem;
-        }
     }
 
+    /***************** DESKTOP WORKFLOW ******************/
+
+
+    .workflow {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin-top: 4rem;
+        box-sizing: border-box;
+        padding: 0 5rem;
+    }
+
+    /***************** DESKTOP BRANDS ******************/
     .brands {
 
+        width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         box-sizing: border-box;
         padding: 0 5rem;
 
-        img {
-
-            margin: 1rem;
-        }
-
     }
 
-    .download-section {
-
-        p {
-            width: 65ch;
-            margin-bottom: 2rem;
-        }
+   
+    .logos img {
+        max-width: min-content;
+      
     }
 
+
+
+    /***************** DESKTOP FOOTER ******************/
+   
+   
     footer {
 
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
-
-        img {
-            margin: 0 5rem 0 5rem;
-            height: fit-content;
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            flex-grow: 2;
-            margin: auto;
-        }
-
-        li {
-            margin: .5rem;
-
-        }
-
-        .rrss {
-            display: flex;
-            margin: 0 5rem 0 5rem;
-        }
     }
-}
+
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+       
+    }
+
+    ul li {
+        margin: .4rem;
+        padding: 0;
+       
+    }
+
+    .rrss {
+        display: flex;
+        margin: 0 5rem 0 5rem;
+    }
