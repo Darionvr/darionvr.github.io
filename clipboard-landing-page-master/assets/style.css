@@ -1,0 +1,395 @@
+:root {
+
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: Bai Jamjuree;
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+}
+
+
+p {
+    color: var(--GrayishBlue);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .7px;
+    line-height: 160%;
+
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
+    h1 {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    img {
+        width: 6rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+button {
+    font-family: Bai Jamjuree;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border-style: none;
+    padding: .8rem;
+    width: 16rem;
+    border-radius: 50px;
+    margin: .8rem;
+
+}
+
+.iOs {
+    background-color: var(--StrongCyan);
+    border-bottom: solid 3px hsl(170, 67%, 33%);
+}
+
+.Mac {
+    background-color: var(--LightBlue);
+    border-bottom: solid 3px hsl(233, 45%, 44%);
+
+}
+
+.iOs:hover {
+    background-color: hsl(171, 57%, 58%);
+    cursor: pointer;
+}
+
+.Mac:hover {
+    background-color: hsl(233, 88%, 78%);
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+
+}
+
+main section:nth-child(1) {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+
+
+    img {
+        margin: 3rem 0 3rem;
+    }
+
+    div {
+        margin-bottom: 1rem;
+
+
+    }
+
+
+}
+
+main section:nth-child(2) {
+
+    img {
+        margin: 2rem 0 2rem;
+    }
+
+
+}
+
+main section:nth-child(3) {
+
+    p {
+        margin-bottom: 5rem;
+    }
+
+    img {
+        width: fit-content;
+        margin: 1rem;
+
+    }
+
+    div {
+        margin-top: 3rem;
+
+    }
+
+}
+
+.brands {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    img {
+        width: fit-content;
+        margin: 2rem;
+    }
+
+}
+
+.download-section {
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    img {
+        width: 3rem;
+        margin: 1rem;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--DarkGrayishBlue);
+
+    }
+
+    a:hover {
+        color: var(--StrongCyan);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 160%;
+
+    }
+
+    li {
+        margin: 1rem;
+    }
+
+
+}
+
+.rrss {
+
+    img {
+        width: fit-content;
+        margin: 1rem;
+    }
+
+    a:hover {}
+
+
+}
+
+
+/***************** DESKTOP ******************/
+
+
+@media (min-width:722px) {
+
+    body {
+        background-image: url(./images/bg-header-desktop.png);
+    }
+
+    button {
+        width: 13rem;
+    }
+
+    header {
+        display: block;
+        margin-bottom: 3rem;
+
+        p {
+            width: 60ch;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+
+    section:nth-child(1) {
+
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: fit-content;
+
+
+        .subtitle {
+            margin-bottom: 5rem;
+            width: 65ch;
+        }
+
+
+        div {
+            text-align: left;
+            margin-left: 80%;
+            margin-top: 1rem;
+
+            h3{
+                margin: 0;
+            }
+
+            p {
+                width: 36ch;
+                
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 120%;
+            left: -80%;
+            top: 25%;
+
+        }
+
+    }
+
+    section:nth-child(2) {
+
+        
+        margin-top: 15rem;
+        align-items: center;
+
+        p {
+            width: 70ch;
+            margin: auto auto 4rem;
+        }
+
+        img {
+            width: 70%;
+        }
+    }
+
+    section:nth-child(3) {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .subtitle {
+            margin-bottom: 0;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-top: 0;
+            box-sizing: border-box;
+            padding: 0 5rem;
+        }
+    }
+
+    .brands {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5rem;
+
+        img {
+
+            margin: 1rem;
+        }
+
+    }
+
+    .download-section {
+
+        p {
+            width: 65ch;
+            margin-bottom: 2rem;
+        }
+    }
+
+    footer {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            margin: 0 5rem 0 5rem;
+            height: fit-content;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            flex-grow: 2;
+            margin: auto;
+        }
+
+        li {
+            margin: .5rem;
+
+        }
+
+        .rrss {
+            display: flex;
+            margin: 0 5rem 0 5rem;
+        }
+    }
+}
