@@ -143,12 +143,17 @@
     }
 
 
+    
     .curves-mobile {
         display: none;
 
 
     }
-
+    
+.curves-desktop{
+    display: block;
+}
+    
     .curves-desktop img {
         height: 100%;
         width: 100%;
