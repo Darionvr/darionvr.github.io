@@ -1,0 +1,303 @@
+:root {
+
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+}
+
+
+body {
+    color: var(--VeryDarkCyan);
+    font-family: Open Sans;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    
+
+}
+
+
+/***************** NAVBAR *****************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    
+
+
+}
+
+.try-button {
+    border-radius: 50px;
+    font-family: Open Sans;
+    background-color: transparent;
+    color: var(--Pink);
+    border: solid 1px var(--Pink);
+    padding: 0 1.5rem;
+    min-width: max-content;
+    
+}
+
+.try-button:hover {
+
+    border: solid 1px hsl(322, 100%, 80%);
+    color: hsl(323, 88%, 80%);
+    cursor: pointer;
+}
+.logo img {
+    width: 60%;
+    margin: .2rem;
+}
+
+/***************** HEADER *****************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+
+
+}
+
+.title h1 {
+    font-family: Poppins;
+    font-size: 1.7rem;
+    
+}
+
+.title p {
+    font-size: 1rem;
+}
+
+.get-button {
+    color: white;
+    background-color: var(--Pink);
+    font-family: Open Sans;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: .8rem 2.5rem;
+    box-shadow: rgb(210, 210, 210) 0px 5px 5px;
+
+}
+.get-button:hover{
+
+
+    background-color: hsl(322, 100%, 80%);
+    cursor: pointer;
+}
+
+/***************** MAIN *****************/
+
+main {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+    
+   
+
+}
+
+/***************** COMMUNITY SECTION *****************/
+
+.mockup img {
+
+    width: 100%;
+
+
+}
+
+.formed {
+
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 10rem auto 6rem auto;
+
+}
+.formed p{
+    margin: 0;
+}
+.formed img {
+    width: 2rem;
+
+}
+
+.messages {
+
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: auto auto 15rem auto;
+
+}
+
+.messages img {
+    width: 1.6rem;
+
+}
+
+.numbers {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+/***************** GROW SECTION *****************/
+.grow {
+    margin-bottom: 15rem;
+
+}
+
+.grow-image img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.subtitle h2 {
+    font-family: Poppins;
+    font-size: 1.7rem;
+    font-weight: 700;
+
+}
+
+/***************** CONVERSARTIONS SECTION *****************/
+
+.conversations {
+    margin-bottom: 15rem;
+}
+
+.conversations-image img {
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+/***************** YOUR USERS SECTION *****************/
+.users {
+
+    margin-bottom: 15rem;
+}
+
+.users-image img {
+    width: 100%;
+}
+
+
+/***************** READY TO BUILD? SECTION *****************/
+
+.ready p {
+    font-family: Poppins;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.ready {
+    margin-bottom: 15rem;
+}
+
+/***************** FOOTER SECTION *****************/
+
+.curves-desktop{
+    display: none;
+}
+
+.curves-mobile img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    
+    
+    color: var(--VeryPaleBlue);
+    background-color: var(--VeryDarkCyan);
+    box-sizing: border-box;
+    padding: 2rem;
+    position: relative;
+    
+}
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    
+}
+
+.newsletter div p:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.subscribe-button{
+    
+    color: white;
+    background-color: var(--Pink);
+    font-family: Open Sans;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .8rem 2.5rem;
+    font-size: 1rem;
+    width: min-content;
+
+}
+
+.subscribe-button:hover{
+    background-color: hsl(322, 100%, 80%);
+    cursor: pointer;
+}
+
+
+.lorem div img{
+
+ filter: brightness(0) invert(1);
+ 
+}
+
+.phone, .email{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.networks{
+    margin-top: 2rem;
+}
+.networks i{
+    margin: .3rem;
+}
+
+

@@ -1,0 +1,159 @@
+@media (min-width:875px) {
+    nav {
+        padding: 3rem;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .try-button {
+        padding: 0 2rem;
+        height: 2.5rem;
+    }
+
+    header {
+        margin-bottom: 4rem;
+    }
+
+    .title h1 {
+
+        font-size: 3rem;
+    }
+
+    .title p {
+        max-width: 52ch;
+        margin: auto;
+        font-size: 1.2rem;
+
+
+    }
+
+    .get-button {
+        padding: 1.5rem 5.5rem;
+        font-size: 1.2rem;
+
+    }
+
+    main {
+
+        padding: 5rem;
+    }
+
+    .mockup img {
+        width: 90%;
+    }
+
+
+    .results {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5rem 4rem 20rem 4rem;
+
+
+    }
+
+    .numbers {
+        font-size: 6rem;
+    }
+
+    .formed,
+    .messages {
+        margin: 0;
+        font-size: 1.5rem;
+
+    }
+
+    .messages p {
+        margin: 0;
+
+    }
+
+
+    .formed img {
+        width: fit-content;
+        height: 2.5rem;
+    }
+
+    .messages img {
+        height: 2.5rem;
+        width: fit-content;
+
+
+    }
+
+    .grow,
+    .conversations,
+    .users {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 5rem;
+    }
+
+    .grow-image,
+    .users-image {
+
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .subtitle h2 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle p {
+        width: min(57ch, 100%);
+    }
+
+    .ready p {
+        font-size: 2.5rem;
+    }
+
+    /***************** FOOTER SECTION *****************/
+
+    footer {
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 5rem;
+
+    }
+
+    .newsletter {
+        margin: 0;
+        
+    }
+
+    .newsletter p {
+        max-width: 41ch;
+    }
+
+    form {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .lorem {
+        max-width: 35ch;
+    }
+
+
+    .curves-mobile {
+        display: none;
+
+
+    }
+
+    .curves-desktop img {
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+}
