@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+
+}
+
+body{
+    font-family: Inter;
+    background-color: var(--Grey900);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: var(--White);
+    
+}
+
+img{
+    border-radius: 50%;
+    width: 6rem;
+}
+.name{
+    font-weight: 600;
+}
+.city{
+    color: var(--Green);
+    font-size: 1rem;
+}
+.description{
+    font-size: 0.875;
+}
+main{
+    background-color: var(--Grey800);
+    display: grid;
+    gap: 1rem;
+    padding: 1.6rem;
+    border-radius: 10px;
+    line-height: 100%;
+}
+
+.card{
+    background-color: var(--Grey700);
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 600;
+}
+.card:hover{
+    cursor: pointer;
+    background-color: var(--Green);
+    color: var(--Grey900);
+}
