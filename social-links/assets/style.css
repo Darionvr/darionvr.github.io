@@ -20,6 +20,10 @@ body{
     justify-content: center;
     text-align: center;
     color: var(--White);
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    
     
 }
 
