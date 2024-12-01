@@ -1,0 +1,125 @@
+:root{
+
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    font-family: Overpass;
+    background-color: var(--VeryDarkBlue);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0rem 1.5rem 0rem 1.5rem; 
+}
+.card{
+    background: linear-gradient(hsl(213, 20%, 22%), hsl(213, 21%, 10%));
+    color: var(--White);
+    padding: 2rem 1.5rem 2rem 1.5rem; 
+    max-width: 32ch;
+    border-radius: 15px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+
+}
+.starIcon{
+    color: var(--Orange);
+    background-color: var(--DarkBlue);
+    width: fit-content;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1rem;
+    
+    
+}
+
+.title{
+    text-align: left;
+}
+
+.subtitle{
+    color: var(--LightGrey);
+    margin: 0;
+    text-align: left;
+}
+
+
+.rating{
+    display: flex;
+    justify-content:space-between;
+    margin: 2rem 0rem;
+}
+
+.number{
+    background-color: var(--DarkBlue);
+    color: var(--LightGrey);
+    border-radius: 50%;
+    font-weight: 700;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number:hover{
+    background-color: var(--Orange);
+    cursor: pointer;
+    color: var(--DarkBlue);
+}
+
+.selectedButton{
+    background-color: var(--White);
+    color: var(--VeryDarkBlue);
+}
+
+#submitButton{
+    background-color: var(--Orange);
+    font-family: Overpass;
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#submitButton:hover{
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+
+.selected{
+    background-color: var(--DarkBlue);
+    color: var(--Orange);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    justify-self: center;
+    
+}
+.thankyouText{
+    text-align: center;
+}
+.thankyouText p{
+    color: var(--LightGrey);
+}
+.posImage{
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+
+
+.attribution{ 
+    font-size: 11px; text-align: center;
+    color: var(--White)
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
