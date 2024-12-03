@@ -38,6 +38,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px;
     display: grid;
     padding: 1.5rem;
+    gap: .3rem;
 }
 
 .tryIt {
