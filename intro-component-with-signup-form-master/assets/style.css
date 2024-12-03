@@ -1,0 +1,153 @@
+:root {
+
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+
+}
+
+body {
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    font-family: Poppins;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+}
+
+main {
+    margin-bottom: 3rem;
+    max-width: 30rem;
+    justify-self: center;
+
+}
+
+header {
+    max-width: 50rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px;
+    display: grid;
+    padding: 1.5rem;
+}
+
+.tryIt {
+    background-color: var(--Blue);
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px;
+    text-align: center;
+   
+}
+
+.freedays{
+    max-width: 17ch;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.thereafter {
+    font-weight: 300;
+}
+
+input {
+    font-family: poppins;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .8rem;
+    border: solid 1px var(--GrayishBlue);
+    width: 90%;
+
+}
+
+.errorInput{
+    border: 2px solid var(--Red);
+}
+
+.container{
+    position: relative;
+    margin-bottom: -1rem;
+    color: var(--Red);
+}
+
+.alert{
+    font-size: .6rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+    margin-right: .4rem;
+    margin-bottom: 0;
+    display: none;
+    
+   
+}
+
+.show{
+    display: block;
+}
+
+input:focus{
+    outline: none;
+    border: solid 1px var(--DarkBlue);
+}
+
+
+.errorIcon{
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20%;
+    display: none;
+    }
+    
+    
+.trial {
+    background-color: var(--Green);
+    color: white;
+    font-family: poppins;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: hsl(154, 56%, 42%) 0px 3px;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.trial:hover{
+    cursor: pointer;
+    background-color: hsl(154, 74%, 57%);
+    box-shadow: hsl(154, 57%, 51%) 0px 3px;
+}
+
+
+.terms {
+    color: var(--GrayishBlue);
+    font-size: .6rem;
+}
+
+.redTerms {
+    color: var(--Red);
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
