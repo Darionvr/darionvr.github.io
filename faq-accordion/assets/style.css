@@ -74,10 +74,10 @@ main{
     animation: fade .5s ease-out;
 }
 
-#icon-plus{
+.icon-plus{
     display: block;
 }
-#icon-minus{
+.icon-minus{
     display: none;
 }
 
