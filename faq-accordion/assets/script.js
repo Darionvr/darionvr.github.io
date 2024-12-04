@@ -4,8 +4,8 @@ questions.forEach(question => {
     question.addEventListener('click', () => {
 
         const answer = question.nextElementSibling;
-        const iconPlus = question.querySelector('#icon-plus'); 
-        const iconMinus = question.querySelector('#icon-minus');
+        const iconPlus = question.querySelector('.icon-plus'); 
+        const iconMinus = question.querySelector('.icon-minus');
 
         answer.classList.toggle('active');
         if (answer.classList.contains('active')) {
