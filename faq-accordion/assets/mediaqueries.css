@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+
+    body{
+        background-image: url(./images/background-pattern-desktop.svg);
+        background-position: top;
+        display: grid;
+        place-items: center;
+
+    
+    }
+    
