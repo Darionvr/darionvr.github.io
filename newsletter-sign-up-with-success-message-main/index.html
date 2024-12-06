@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/mediaqueries.css">
+</head>
+
+<body>
+
+
+
+  <main>
+
+    <div class="mobile"> <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
+    <div class="message">
+      <h1> Stay updated! </h1>
+
+      <h2> Join 60,000+ product managers receiving monthly updates on: </h2>
+
+      <div class="updatelist">
+        <p><img class="iconlist" src="assets/images/icon-list.svg" alt="">Product discovery and building what matters
+        </p>
+        <p><img class="iconlist" src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</p>
+        <p><img class="iconlist" src="assets/images/icon-list.svg" alt="">And much more!</p>
+      </div>
+
+      <form novalidate>
+        <div class="validEmail">
+          <label for="email">Email address</label>
+          <p class="valid"> Valid email required</p>
+        </div>
+        <input type="email" id="email" placeholder="email@company.com">
+        <button class="submitbutton" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+
+    <div class="image"><img src="assets/images/illustration-sign-up-desktop.svg" alt=""></div>
+
+
+
+  </main>
+
+  <div class="success">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h2 class="thanks">Thanks for subscribing!
+    </h2>
+    <p class="confirmation">  </p>
+    <button class="dismiss"> Dismiss message </button>
+  </div>
+
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="assets/script.js"></script>
+
+</body>
+
+</html>
