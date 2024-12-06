@@ -1,0 +1,99 @@
+:root{
+--VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+--DesaturatedDarkBlue: hsl(214, 17%, 51%);
+--GrayishBlue: hsl(212, 23%, 69%);
+--LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-family: Manrope;
+    font-size: .85rem;
+    background-color: var(--LightGrayishBlue);
+    padding: 2rem   ;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: var(--VeryDarkGrayishBlue);
+    border-radius: 10px;
+}
+.headerImage img{
+    width: 100%;
+    
+}
+.headerImage{
+    max-height: 270px ;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+h1{
+    font-size: 1.2rem;
+    padding: 2rem 2rem 0 ;
+    
+}
+.review{
+    padding: 0 2rem;
+}
+.blogger{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    height: 3rem;
+   
+
+}
+.profilePic{
+    width: 50px;
+   
+}
+.profilePic img{
+    border-radius: 100px;
+    width: 100%;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.name{
+    font-weight: 700;
+    margin: 0;
+    
+}
+.date{
+   margin-top: .2rem;
+   color: var(--DesaturatedDarkBlue);
+ 
+}
+
+.arrow{
+    background-color: var(--LightGrayishBlue);
+    padding: .5rem;
+    border-radius: 100px;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.share{
+    background-color: var(--VeryDarkGrayishBlue);
+    color:var(--GrayishBlue);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem 2rem;
+    display: none;
+    gap: 1rem;
+    letter-spacing: 2px;
+    align-items: center;
+    height: 3rem;
+}
+.arrowdos{
+    background-color: var(--GrayishBlue);
+    padding: .5rem;
+    border-radius: 100px;
+    justify-self: flex-end;
+    margin-left: auto;
+    height: 1rem;
+}

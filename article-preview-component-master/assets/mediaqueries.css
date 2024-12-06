@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        height: 100vh;
+        padding: 0;
+    }
+
+    main {
+        flex-direction: row;
+        width: max-content;
+        position: relative;
+    }
+
+    .headerImage {
+        max-height: 300px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        width: 19rem;
+
+    }
+
+    .headerImage img {
+        height: 100%;
+        width: min-content;
+    }
+
+    .bodycard {
+        max-width: 50ch;
+
+
+    }
+
+    .arrowdos {
+        display: none;
+    }
+
+    .share {
+        
+        position: absolute;
+        border-radius: 10px;
+        height: 1rem;
+        right: -65px;
+        bottom: 100px;
+
+
+        
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 25px solid var(--VeryDarkGrayishBlue);
+        position: absolute;
+        height: 1rem;
+        right: 30px;
+        bottom: 70px;
+        transform: rotate(180deg);
+        display: none;
+ 
+    }
+
+
+}
