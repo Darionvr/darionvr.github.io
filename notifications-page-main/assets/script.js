@@ -89,9 +89,9 @@ unRead = (read) => {
 
 postPictures = (postPic) => {
     if (postPic === '') {
-        return `<img style="display: none;">`
+        return `<img style="display: none;" alt="pic">`
     } else {
-        return `<img src=${postPic}>`
+        return `<img src=${postPic} alt="pic">`
     };
 };
 
@@ -111,7 +111,7 @@ function renderNotifications() {
     for (let notification of notifications) {
         const planilla = `
     <div class="card">
-      <div class="profilePic"><img src=${notification.profilePic} > </div>
+      <div class="profilePic"><img src=${notification.profilePic} alt="pic"> </div>
       <div class="message">
         <p><span class="name"> ${notification.name} </span> <span class="notification"> ${notification.action}  </span>
         <span class="comment">${notification.comment}</span> ${unRead(notification.read)}
