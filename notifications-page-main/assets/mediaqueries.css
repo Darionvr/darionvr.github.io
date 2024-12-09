@@ -1,0 +1,9 @@
+@media (min-width:768px) {
+    nav{
+        margin-top: 2rem;
+        
+    }
+    main{
+        margin-bottom: 2rem;
+    }
+}

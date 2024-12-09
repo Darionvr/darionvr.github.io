@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Plus Jakarta ;
+    src: url(./fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+}
+
+body{
+    font-family: Plus Jakarta;
+    display: grid;
+    justify-content: center;
+    background-color: var(--Verylightgrayishblue);
+    align-items: center;
+}
+
+nav{
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 58ch;
+    
+}
+.number{
+    color: white;
+    background-color: var(--Blue);
+    padding: .3rem;
+    display: inline-block;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: .5rem;
+    
+}
+.mark{
+    font-weight: 500;
+    color: var(--Darkgrayishblue);
+}
+.mark:hover, .comment:hover, .name:hover{
+    cursor: pointer;
+    color: var(--Blue);
+}
+main{
+    display: grid;
+    gap: 1rem;
+    max-width: 58ch;
+    background-color: var(--White);
+    
+    
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--Verylightgrayishblue);
+    
+
+}
+.profilePic{
+    margin: 1rem;
+
+}
+.profilePic img{
+    width: 3rem;
+}
+
+
+.name{
+    font-weight: 800;
+}
+.notification{
+    color: var(--Darkgrayishblue);
+}
+.comment{
+    font-weight: 800;
+    color: var(--Darkgrayishblue);
+
+}
+
+
+.club{
+    color: var(--Blue);
+}
+.date{
+    color: var(--Grayishblue);
+   
+}
+.message p{
+    margin: 0;
+}
+
+.post{
+    font-weight: 500;
+    border: solid 1px var(--Lightgrayishblue2);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--Darkgrayishblue);
+    margin-top: 1rem;
+    
+}
+
+.post:hover{
+    border: none;
+    background-color: var(--Lightgrayishblue2);
+    cursor: pointer;
+}
+#riskyid{
+    align-self:flex-start;
+    margin-top: 0;
+}
+.postPicture img{
+    width: 3rem;
+
+}
+.postPicture{
+    margin-left: .5rem;
+}
+.postPicture:hover{
+    cursor: pointer;
+}
+.redDot{
+    color: var(--Red);
+}
+.bold{
+    font-size: 1.4rem;
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
