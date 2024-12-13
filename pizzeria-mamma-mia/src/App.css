@@ -1,0 +1,247 @@
+/*****************************  Header  *****************************/
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Oswald;
+  background-color: 204, 58, 0;
+  background-color: var(--Naranjo);
+  color: var(--Blanco);
+  margin: 0;
+  max-height: 650px;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.titulo {
+  margin-left: 3rem;
+  max-width: 25ch;
+
+}
+
+.titulo h1 {
+  font-size: clamp(2rem, 7vw, 8rem);
+  margin: 0;
+  line-height: 100%;
+}
+
+.titulo p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+
+header img {
+
+
+  width: 100%;
+  display: block;
+  justify-self: right;
+
+}
+
+/***************************** NAV BAR *****************************/
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+ 
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: var(--Naranjo);
+  text-transform: uppercase;
+  font-weight: 700;
+
+
+}
+
+nav a:hover{
+  color: var(--NaranjoClaro);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--Naranjo);
+}
+
+/***************************** BOTÓN TOTAL *****************************/
+.total {
+
+  justify-self: flex-end;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-weight: 800;
+  border: none;
+  background-color: var(--Naranjo);
+  box-shadow: -4px 5px 0px rgba(107, 32, 21, 0.353);
+
+}
+
+.total:hover{
+  background-color: var(--NaranjoClaro);
+  cursor: pointer;
+}
+.total a {
+  color: var(--Blanco);
+}
+.total a:hover{
+  color: var(--Blanco);
+}
+
+/***************************** PIZZA CARD *****************************/
+
+
+.card{
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: -4px 5px 0px rgba(186, 126, 116, 0.353);
+  
+  
+}
+.fotopizza{
+  width: 100%;
+  
+}
+.fotopizza img{
+  width: 100%;
+  border-radius: 15px;
+}
+.nombre, .precio{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: .5rem;
+  color: var(--GrisOscuro);
+  font-family: oswald;
+}
+.ingredientes{
+  color: var(--Grismedio);
+  text-transform: capitalize;
+  margin: .5rem;
+}
+
+.botones{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.verMas{
+  border: solid 1px var(--Naranjo);
+  background-color: white;
+  color: var(--NaranjoClaro);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .8rem 2.5rem;
+  border-radius: 25px;
+}
+
+.anadir{
+  border: none;
+  background-color: var(--Naranjo);
+  color: var(--Blanco);
+  font-family: Roboto;
+  font-weight: 700;
+  padding: .8rem 2.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+.verMas:hover{
+  border: solid 1px var(--NaranjoClaro);
+  cursor: pointer;
+  background-color: var(--Blanco);
+  color: var(--Naranjo);
+}
+.anadir:hover{
+  background-color: var(--NaranjoClaro);
+  color: white;
+  cursor: pointer;
+}
+
+/***************************** FOOTER *****************************/
+
+.redes{
+  background-color: var(--Naranjo);
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.logofooter{
+text-align: center;
+justify-self: center;
+color: var(--Blanco);
+}
+.mammafooter{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  font-family: Oswald;
+}
+.iconos{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1rem;
+}
+.enlace{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.iconos a{
+  text-decoration: none;
+  color: var(--Blanco);
+  font-size: 2rem;
+}
+.info{
+  background-color: var(--NaranjoClaro);
+  text-align: center;
+  color: var(--Blanco);
+  padding: 2rem;
+  font-weight: 300;
+}
+
+@media (max-width:768px) {
+  .anadir, .verMas{
+    padding: .5rem 1.5rem;
+  }
+
+  .redes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .iconos{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .enlace{
+    font-size: .8rem;
+  }
+  .direccion{
+    margin-top: 0
+    ;
+  }
+}
