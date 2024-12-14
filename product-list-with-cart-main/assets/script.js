@@ -153,7 +153,7 @@ function renderCards() {
 
         const card = `
               <div class="card">
-                <img src="assets/images/${source}" alt="${dessert.type}" class="picture">
+                <img src="./assets/images/${source}" alt="${dessert.type}" class="picture">
                 <button class="addtocart"><img src="assets/images/icon-add-to-cart.svg" alt="Icono añadir al carrito"> Add to Cart</button>
                 <div class="text">
                   <p class="type">${dessert.type}</p>
