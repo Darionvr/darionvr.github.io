@@ -141,7 +141,7 @@ function renderCards() {
 
     main.innerHTML = '';
     desserts.forEach(dessert => {
-        const typeFormatted = normalizeText(dessert.type).split(' ').join('-');
+        const typeFormatted = normalizeText(dessert.type).split(' ').join('-').toLowerCase();
 
         if (width < 480) {
             source = `image-${typeFormatted}-mobile.jpg`;
@@ -153,7 +153,7 @@ function renderCards() {
 
         const card = `
               <div class="card">
-                <img src="./assets/images/${source}" alt="postre" class="picture">
+                <img src="assets/images/${source}" alt="postre" class="picture">
                 <button class="addtocart"><img src="assets/images/icon-add-to-cart.svg" alt="Icono añadir al carrito"> Add to Cart</button>
                 <div class="text">
                   <p class="type">${dessert.type}</p>
