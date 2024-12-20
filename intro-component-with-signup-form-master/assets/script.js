@@ -28,7 +28,7 @@ if(email.value.trim() == ''){
     email.nextElementSibling.style.display = 'block';
     
 }else if(!email.value.match(emailCharacters)){
-    ocument.querySelector('#emailAlert').classList.add('show');
+    document.querySelector('#emailAlert').classList.add('show');
     email.classList.add('errorInput');
     email.nextElementSibling.style.display = 'block';
 }
